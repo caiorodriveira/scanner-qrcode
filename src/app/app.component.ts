@@ -30,8 +30,8 @@ export class AppComponent {
 
   //altera frontal ou traseira
   changeCamera(){
-    let {facingNode} = this.config.video;
-    this.config.video.facingNode = facingNode === 'enviroment' ? 'user': 'enviroment';
+    let {facingMode} = this.config.video;
+    this.config.video.facingMode = facingMode === 'enviroment' ? 'user' : 'enviroment'
     this.startScanner()
   }
 
