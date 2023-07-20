@@ -1,9 +1,14 @@
 <section>
-  <button>R</button>
-  <div>
+  <button class="float-button" (click)="changeCamera()">R</button>
+  <div class="video_container">
     <video #videoElement autoplay playsinline></video>
   </div>
-  <p>{{"Centralize a camera com o qr code"}}</p>
+
+  <p class="mt-2">{{"Centralize a camera com o qr code"}}</p>
+
+  <div class="wrapper-cam" style="display: none;">
+    <canvas id="canvas" #canvas></canvas>
+  </div>
 </section>
 
 <!-- <router-outlet></router-outlet> -->
