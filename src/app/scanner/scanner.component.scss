@@ -1,0 +1,33 @@
+.container{
+  border: 2px solid #000;
+  height: 500px;
+  width: 500px;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 8px;
+  height: calc(100vh - 2rem);
+}
+
+.video_container{
+  padding: 10px;
+  video {
+    width: 100%;
+    border-radius: 6px;
+
+  }
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.float-button {
+  float: right;
+  z-index: 10;
+  position: relative;
+  transform: translate(133px, 40px);
+}

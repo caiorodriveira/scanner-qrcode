@@ -9,5 +9,6 @@ export class DataQrcodeComponent {
   dataQrCode: any;
   constructor(){
     this.dataQrCode = history.state.data;
+    console.log('teste')
   }
 }
