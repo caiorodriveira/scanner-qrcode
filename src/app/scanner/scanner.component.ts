@@ -44,7 +44,7 @@ export class ScannerComponent {
     this.videoStream = await navigator.mediaDevices.getUserMedia(this.config)
     this.video.nativeElement.srcObject = this.videoStream;
 
-    //verifica a cada toco se conseguiu identificar algum frame
+    //verifica a cada frame se conseguiu identificar algum qrcode
     this.spyCamera();
   }
 
