@@ -26,10 +26,10 @@ export class ScannerComponent {
     this.prepareScanner();
   }
 
-  //altera frontal (user) ou traseira(enviroment)
+  //altera frontal (user) ou traseira(environment)
   changeCamera(){
     let {facingMode} = this.config.video;
-    this.config.video.facingMode = facingMode === 'enviroment' ? 'user' : 'enviroment'
+    this.config.video.facingMode = facingMode === 'environment' ? 'user' : 'environment';
     this.startScanner()
   }
 
